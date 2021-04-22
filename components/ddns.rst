@@ -6,7 +6,7 @@ DDNS IP updater Component
     :image: ddns.png
     :keywords: DDNS
 
-The DDNS IP updater Component sets up connection with your DDNS provider for update your public IP for a domain.
+The DDNS IP updater Component sets up connection with your DDNS provider to update your public IP for a domain.
 
 .. code-block:: yaml
 
@@ -35,12 +35,12 @@ Configuration variables:
   authentication. Empty (the default) means no authentication.
 - **password** (*Optional*, string): The password to use for
   authentication. Empty (the default) means no authentication.
-- **token** (*Optional*, string): The password to use for
+- **token** (*Optional*, string): The secret token to use for
   authentication. Empty (the default) means no authentication.
-- **update_interval** (*Optional*, int): Interval for update
-  check if the IP change in `ms`. Default ``10000 ms`` (10 seconds)
-- **use_local_ip** (*Optional*, boolean): Set ``True`` for send
-  local IP to DDNS provider.Defaults to ``False``.
+- **update_interval** (*Optional*, int): Time between IP change 
+  checks in `ms`. Default ``10000 ms`` (10 seconds)
+- **use_local_ip** (*Optional*, boolean): Set ``True`` to send
+  local IP to DDNS provider. Defaults to ``False``.
 
 
 Supported DDNS Providers:
